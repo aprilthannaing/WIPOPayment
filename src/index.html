@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>WIPO File</title>
+  <base href="/">
+  <script type="text/javascript">
+    var apiurl    = "http://localhost:8081";
+    var cbpayurl = "https://122.248.120.187:4443/payment-api/v1/qr";
+    var mpsgurl ="https://cbbank.gateway.mastercard.com";
+    var mpuurl = "https://122.248.120.252:60145";
+    window._apiurl = apiurl;
+    window._cbpayurl = cbpayurl;
+    window._mpsgurl = mpsgurl;
+    window._mpuurl = mpuurl;
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="https://ap-gateway.mastercard.com/checkout/version/52/checkout.js"
+      data-error="http://localhost:4200/#/fail"
+      data-cancel="http://localhost:4200/#/fail"
+      data-complete="http://localhost:4200/#/visa" 
+      data-timeout="http://localhost:4200/#/fail"></script>        
+</head>
+<body>
+  <script>if(window['global'] === undefined){ window['global'] = window }</script>
+  <app-root></app-root>
+</body>
+</html>

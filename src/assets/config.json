@@ -1,0 +1,5 @@
+{
+"apiurl"    : "http://localhost:8081",
+"cbpayurl" : "https://122.248.120.187:4443/payment-api/v1/qr",
+"mpuurl"  : "https://122.248.120.252:60145"
+}
